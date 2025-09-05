@@ -1,5 +1,6 @@
-Project 3 – Dual-Core Processor Design
-📌 Introduction
+#Project 3 – Dual-Core Processor Design
+
+#📌 Introduction
 
 With the increasing demand for computational performance, multi-core processors have become a standard solution. This project focuses on designing and implementing a dual-core processor system. Each core operates independently but shares access to a common memory, requiring careful handling of synchronization and memory consistency.
 
