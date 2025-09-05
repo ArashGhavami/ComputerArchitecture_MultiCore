@@ -39,7 +39,6 @@ Priority rules must be established (e.g., CPU0 has priority in case of conflict)
 New Instructions:
 
 ``` cpuid rd → Stores the core ID into register rd (0 for CPU0, 1 for CPU1).
-```
 sync → Synchronization instruction ensuring both CPUs reach the same execution point before continuing (blocking).
 
 
