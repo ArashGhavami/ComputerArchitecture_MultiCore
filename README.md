@@ -3,7 +3,6 @@
 # Introduction
 
 With the increasing demand for computational performance, multi-core processors have become a standard solution. This project focuses on designing and implementing a dual-core processor system. Each core operates independently but shares access to a common memory, requiring careful handling of synchronization and memory consistency.
-
 The main objective is to extend a previously implemented single-core processor into a two-core architecture and analyze the effects of parallel execution on system performance.
 
 
@@ -37,10 +36,10 @@ Requires a control mechanism to handle simultaneous read/write requests.
 
 Priority rules must be established (e.g., CPU0 has priority in case of conflict).
 
-New Instructions
+New Instructions:
 
-cpuid rd → Stores the core ID into register rd (0 for CPU0, 1 for CPU1).
-
+``` cpuid rd → Stores the core ID into register rd (0 for CPU0, 1 for CPU1).
+```
 sync → Synchronization instruction ensuring both CPUs reach the same execution point before continuing (blocking).
 
 
