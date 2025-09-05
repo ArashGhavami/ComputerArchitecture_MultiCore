@@ -7,17 +7,14 @@ With the increasing demand for computational performance, multi-core processors 
 The main objective is to extend a previously implemented single-core processor into a two-core architecture and analyze the effects of parallel execution on system performance.
 
 
-🎯 Objectives
+# Objectives
 
-Understand the architecture of multi-core processors and their advantages.
+1. Understand the architecture of multi-core processors and their advantages.
+2. Design and implement a dual-core processor using concepts from single-core design.
+3. Explore methods of memory sharing and synchronization between cores.
+4. Evaluate system performance compared to a single-core design.
 
-Design and implement a dual-core processor using concepts from single-core design.
-
-Explore methods of memory sharing and synchronization between cores.
-
-Evaluate system performance compared to a single-core design.
-
-🛠️ Project Description
+# Project Description
 Core Architecture
 
 Two independent cores: CPU0 and CPU1
