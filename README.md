@@ -14,45 +14,24 @@ The main objective is to extend a previously implemented single-core processor i
 4. Evaluate system performance compared to a single-core design.
 
 # Project Description
-Core Architecture
-
 Two independent cores: CPU0 and CPU1
-
-Each core contains:
-
-Program Counter (PC)
-
-ALU
-
-Register File
-
-Control Unit
-
-Shared Memory
-
 A single shared memory module accessible by both cores.
-
 Requires a control mechanism to handle simultaneous read/write requests.
-
 Priority rules must be established (e.g., CPU0 has priority in case of conflict).
 
-New Instructions:
+New Instructions Added to this Architecture:
 
 ```bash
 cpuid rd → Stores the core ID into register rd (0 for CPU0, 1 for CPU1).
 sync → Synchronization instruction ensuring both CPUs reach the same execution point before continuing (blocking).
 ```
 
-
-Optional Feature (Bonus)
-
-Atomic exchange instruction:
-
+Optional Feature (Bonus):
+Atomic exchange instruction
+```bash
 exchng rt, [rs + imm]  
-
-
+```
 Exchanges rt with memory at address [rs + imm].
-
 Can be used to implement spinlocks and synchronization primitives.
 
 📐 Implementation Steps
