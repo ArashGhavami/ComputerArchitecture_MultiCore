@@ -36,7 +36,7 @@ Can be used to implement spinlocks and synchronization primitives.
 
 # Implementation Steps
 
-Create a base dual-core structure
+Create a base dual-core structure\n
 
 Copy the single-core CPU design into two cores (CPU0 and CPU1).
 
