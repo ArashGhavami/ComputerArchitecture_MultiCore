@@ -36,18 +36,18 @@ Can be used to implement spinlocks and synchronization primitives.
 
 # Implementation Steps
 
-Create a base dual-core structure. 
-Copy the single-core CPU design into two cores (CPU0 and CPU1).  
-Implement independent PCs, ALUs, and registers.  
-Connect both cores to a shared memory module.  
-Design a write buffer. 
-Add a FIFO buffer for memory writes.  
-Prevent simultaneous writes from causing conflicts.  
-Implement cpuid instruction. 
-Each core must return its ID when executing cpuid.  
-Implement sync instruction. 
-Cores must block until both reach sync, then continue execution together.  
-(Bonus) Add spinlock synchronization using exchng.  
+Create a base dual-core structure.     
+Copy the single-core CPU design into two cores (CPU0 and CPU1).      
+Implement independent PCs, ALUs, and registers.     
+Connect both cores to a shared memory module.     
+Design a write buffer.    
+Add a FIFO buffer for memory writes.     
+Prevent simultaneous writes from causing conflicts.    
+Implement cpuid instruction.    
+Each core must return its ID when executing cpuid.    
+Implement sync instruction.    
+Cores must block until both reach sync, then continue execution together.    
+(Bonus) Add spinlock synchronization using exchng.    
 
 # Evaluation & Testing
 
